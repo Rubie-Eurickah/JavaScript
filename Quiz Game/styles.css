@@ -1,0 +1,79 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --neutral: #9090fd; 
+    --wrong: #a80404;
+    --right: #025c02;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: antiquewhite;
+    border-radius: .5rem;
+    padding: 2rem;
+    box-shadow: 0 0 .9rem .2rem;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    color: white;
+    background-color: var(--neutral);
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid white;
+}
+
+.btn:hover {
+    border: 2px solid black;
+}
+
+.btn.correct {
+    background-color: var(--right);
+}
+
+.btn.wrong {
+    background-color: var(--wrong);
+}
+
+.questions {
+    font-size: 2rem;
+
+}
+
+.start-btn, .next-btn {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.hide {
+    display: none;
+}
